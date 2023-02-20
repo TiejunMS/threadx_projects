@@ -2,7 +2,8 @@
 This demo is based on [ThreadX demo for Linux](https://github.com/azure-rtos/threadx/blob/master/ports/linux/gnu/example_build/sample_threadx.c). In this demo, [TraceX](https://learn.microsoft.com/en-us/azure/rtos/tracex/overview-tracex) is enabled. Trace [buffer](https://learn.microsoft.com/en-us/azure/rtos/tracex/chapter5) is generated and dumped to file for easy to use. You will need to install [TraceX](https://learn.microsoft.com/en-us/azure/rtos/tracex/chapter2) to open the buffer.
 
 ## How to run
-1. Open the project in codespace.
+1. Open the project in codespace from root path.
+  ![](./img/open_codespace.png)
 1. Open a terminal and build the project. Make sure the path is at the root of this repository.
   ```
   cmake -GNinja -Bbuild
