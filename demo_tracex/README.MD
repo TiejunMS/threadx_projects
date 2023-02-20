@@ -3,18 +3,18 @@ This demo is based on [ThreadX demo for Linux](https://github.com/azure-rtos/thr
 
 ## How to run
 1. Open the project in codespace from root path.
-  ![](./img/open_codespace.png)
+    ![](./img/open_codespace.png)
 1. Open a terminal and build the project. Make sure the path is at the root of this repository.
-  ```
-  cmake -GNinja -Bbuild
-  cmake --build build
-  ```
+    ```
+    cmake -GNinja -Bbuild
+    cmake --build build
+    ```
 1. Run this demo.
-  ```
-  ./build/demo_tracex/demo_tracex ./tx.trx
-  ```
+    ```
+    ./build/demo_tracex/demo_tracex ./tx.trx
+    ```
 1. Let the demo run for 3 seconds or more to generate enough events.
 1. Terminate the application by press `CTRL+C`.
 1. Download *./tx.trx* from **Explorer** tab.
-	![](./img/trace.png)
+    ![](./img/trace.png)
 1. In your local disk, double click *tx.trx* to open it in TraceX.
