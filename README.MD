@@ -1,0 +1,1 @@
+This repository contains projects to demonstrate issues from [threadx](https://github.com/azure-rtos/threadx) repository.
