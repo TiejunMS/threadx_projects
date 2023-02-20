@@ -10,7 +10,7 @@ set(LIBS_DIR ${BASE_DIR}/libs)
 
 include(${BASE_DIR}/cmake/linux.cmake)
 
-set(NX_USER_FILE ${CMAKE_SOURCE_DIR}/tx_user.h)
+set(TX_USER_FILE ${CMAKE_SOURCE_DIR}/tx_user.h)
 
 # Project
 set(PROJECT AzureRTOS_Projects)
