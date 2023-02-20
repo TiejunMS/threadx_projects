@@ -262,6 +262,13 @@ void    thread_1_entry(ULONG thread_input)
 {
 
 UINT    status;
+#if 1 /* Simulator is too fast to generate meaningful events. Slow down this thread. */
+/* Define a struct timespec */
+struct timespec ts;
+    /* Set it to 500 microseconds */
+    ts.tv_sec = 0;
+    ts.tv_nsec = 500000;
+#endif
 
 
     /* This thread simply sends messages to a queue shared by thread 2.  */
@@ -277,6 +284,8 @@ UINT    status;
         /* Check completion status.  */
         if (status != TX_SUCCESS)
             break;
+
+        nanosleep(&ts, NULL);
 
         /* Increment the message sent.  */
         thread_1_messages_sent++;
